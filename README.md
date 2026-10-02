@@ -2,7 +2,6 @@
 
 An Android application that adds gamification to the learning process: progress is tracked, milestones produce rewards, and streaks encourage daily use. Built for the innowise hackathon on 29 November 2024.
 
-The application lives in the `innowise/` directory. The root of the repository only carries this file.
 
 ## Features
 
@@ -40,7 +39,7 @@ None. The application does not require build-time configuration.
 
 ```bash
 git clone https://github.com/glcskl/hackathoninnowisegomel.git
-cd hackathoninnowisegomel/innowise
+cd hackathoninnowisegomel
 ```
 
 Open the directory in Android Studio and let it resolve the Gradle dependencies, or build from the command line:
@@ -68,17 +67,16 @@ adb shell am start -n ry.tech.speedban/.MainActivity
 ## Project structure
 
 ```
-innowise/
-  app/
-    build.gradle     application module
-    src/main/
-      java/ry/tech/speedban/   application code
-      res/layout/              XML layouts
-      res/menu/                menu resources
-      res/mipmap/               launcher icons
-  build.gradle       root build configuration
-  settings.gradle    module list
-  gradle.properties  Gradle settings
+app/
+  build.gradle     application module
+  src/main/
+    java/ry/tech/speedban/   application code
+    res/layout/              XML layouts
+    res/menu/                menu resources
+    res/mipmap/               launcher icons
+build.gradle       root build configuration
+settings.gradle    module list
+gradle.properties  Gradle settings
 ```
 
 ## SDK versions
